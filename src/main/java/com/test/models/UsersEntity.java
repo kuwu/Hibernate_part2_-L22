@@ -99,4 +99,15 @@ public class UsersEntity {
     result = 31 * result + (password != null ? password.hashCode() : 0);
     return result;
   }
+
+  @Override
+  public String toString() {
+    return "UsersEntity" +
+        "userId='" + userId + '\'' +
+        ", firstName='" + firstName + '\'' +
+        ", lastName='" + lastName + '\'' +
+        ", email='" + email + '\'' +
+        ", phoneNumber='" + phoneNumber + '\'' +
+        ", password='" + password + '\'';
+  }
 }

@@ -28,7 +28,7 @@ public class HomeController {
 
   @RequestMapping("/")
   public ModelAndView helloWorld() {
-    String hi = "Welcome";
+    String hi = "User Login";
     return new
         ModelAndView( "welcome", "message",hi);
 
@@ -69,7 +69,7 @@ public class HomeController {
   public ModelAndView listItem() {
     ArrayList<ItemsEntity> itemList = getAllItems();
 
-    return new ModelAndView("welcome", "cList", itemList);
+    return new ModelAndView("listItems", "cList", itemList);
   }
 
   private ArrayList<ItemsEntity> getAllItems() {
@@ -126,5 +126,7 @@ public class HomeController {
 
     return "addcustsuccess";
   }
+
+//TODO password validaite and return to login
 
 }

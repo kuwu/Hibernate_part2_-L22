@@ -10,12 +10,22 @@
 
 <html>
 <head>
-    <title>Title</title>
+    <title>Login</title>
 
 </head>
 <body>
 <div>
     ${message}<br>
+        <br>
+
+        <form method="post" action = "/listItems">
+            User Name: <input type="text" name="userId">
+            <br>
+            Password: <input type="password" name="password">
+            <br>
+            <br>
+            <input type="submit" value="Login">
+        </form>
 
         <table border="1">
             <c:forEach var="myVar" items="${cList}">
@@ -28,8 +38,8 @@
             </tr>
 
             </c:forEach>
+       <p>Need an Account?  <a href="getNewCust">Sign Up</a></p>
 
-        <a href="getNewCust">Add Customer</a>
 </div>
 </body>
 </html>
