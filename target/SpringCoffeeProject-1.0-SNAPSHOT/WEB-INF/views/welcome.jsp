@@ -27,17 +27,7 @@
             <input type="submit" value="Login">
         </form>
 
-        <table border="1">
-            <c:forEach var="myVar" items="${cList}">
-            <tr>
-                <td>${myVar.itemId}</td>
-                <td>${myVar.name}</td>
-                <td>${myVar.descript}</td>
-                <td>${myVar.quanity}</td>
 
-            </tr>
-
-            </c:forEach>
        <p>Need an Account?  <a href="getNewCust">Sign Up</a></p>
 
 </div>

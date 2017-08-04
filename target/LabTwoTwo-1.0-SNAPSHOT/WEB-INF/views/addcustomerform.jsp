@@ -14,11 +14,10 @@
 
 <form action="addNewCustomer" method="post">
     Customer ID: <input type="text" name="userId" required> <br>
-    Company Name: <input type="text" name="firstName" required> <br>
-    Contact Name: <input type="text" name="lastName"> <br>
-    Contact Title: <input type="text" name="email"> <br>
-    Address: <input type="text" name="phoneNumber"> <br>
-    City: <input type="text" name="password"> <br>
+    First Name: <input type="text" name="firstName" required> <br>
+    Last Name: <input type="text" name="lastName"> <br>
+    Email: <input type="text" name="email"> <br>
+    Password: <input type="text" name="password"> <br>
     <input type="submit" value="Add Customer">
 
 </form>
